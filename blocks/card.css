@@ -26,7 +26,6 @@
 
 .card__like-button:hover {
   opacity: 100%;
-  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -49,5 +48,9 @@
   .card__title {
     font-size: 16px;
     max-width: 250px;
+  }
+  .card__like-button {
+    width: 20px;
+    height: 18px;
   }
 }
