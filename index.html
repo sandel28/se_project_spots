@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="sandel martinez" />
-    <meta name="keyword" content="html,css" />
-    <meta name="description" content="spots project" />
-    <link rel="stylesheet" href="pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sandel martinez">
+    <meta name="keywords" content="html,css">
+    <meta name="description" content="spots project">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="spots logo" class="header__logo" />
+        <img src="./images/Logo.svg" alt="spots logo" class="header__logo" >
       </header>
       <main class="content">
         <section class="profile page__section">
@@ -21,16 +21,16 @@
             src="./images/Avatar.svg"
             alt="bessie coleman"
             class="profile__avatar"
-          />
+           >
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg" alt="pencil icon" />Edit button
+              <img src="./images/pencil.svg" alt="pencil icon" >Edit button
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="plus icon" />New Post
+            <img src="./images/plus.svg" alt="plus icon" >New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -40,7 +40,7 @@
                 src="./images/val-thorens.jpg"
                 alt="val thorens"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">Val thorens</h2>
                 <button type="button" class="card__like-button"></button>
@@ -51,7 +51,7 @@
                 src="./images/resturant-terrace.jpg"
                 alt="Restaurant terrace"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">Restaurant terrace</h2>
                 <button type="button" class="card__like-button"></button>
@@ -62,7 +62,7 @@
                 src="./images/outdoor-cafe.jpg"
                 alt="outdoor cafe"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">An outdoor cafe</h2>
                 <button type="button" class="card__like-button"></button>
@@ -73,7 +73,7 @@
                 src="./images/long-bridge.jpg"
                 alt="long bridge"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">
                   A very long bridge, over the forest...
@@ -86,7 +86,7 @@
                 src="./images/tunnel-morning-light.jpg"
                 alt="morning light"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">Tunnel with morning light</h2>
                 <button type="button" class="card__like-button"></button>
@@ -97,7 +97,7 @@
                 src="./images/mountain-house.jpg"
                 alt="mountain house"
                 class="card__image"
-              />
+              >
               <div class="card__content">
                 <h2 class="card__title">Mountain house</h2>
                 <button type="button" class="card__like-button"></button>
@@ -109,18 +109,18 @@
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Sandel Martinez</p>
       </footer>
-      <div class="modal modal_is-opened">
+      <div class="modal ">
         <div class="modal__container">
-          <button type="button"  class="modal__close-btn"></button>
+          <button type="button"  class="modal__close-btn" aria-label="close"></button>
           <h2 class="modal__title">Edit profile</h2>
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label">
               Name
-              <input id="profile-name-input"  type="text" class="modal__input"  placeholder="Type your name"/>
+              <input id="profile-name-input"  type="text" class="modal__input"  placeholder="Type your name">
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
-              <input id="profile-description-input"  type="text" class="modal__input"  placeholder="Describe yourself"/>
+              <input id="profile-description-input"  type="text" class="modal__input"  placeholder="Describe yourself">
             </label>
             <button type="submit"  class="modal__submit-btn">Save</button>
           </form>
@@ -128,20 +128,21 @@
       </div>
     <div class="modal modal_is-opened">
       <div class="modal__container">
-        <button type="button"  class="modal__close-btn"></button>
+        <button type="button"  class="modal__close-btn" aria-label="close"></button>
         <h2 class="modal__title">New post</h2>
         <form class="modal__form">
           <label for="card-image-input" class="modal__label">
             image link
-            <input id="card-image-input"  type="url" class="modal__input"  placeholder="Paste a link to the picture"/>
+            <input id="card-image-input"  type="url" class="modal__input"  placeholder="Paste a link to the picture">
           </label>
-          <label for="profile-description-input" class="modal__label">
+          <label for="card-description-input" class="modal__label">
             Caption
-            <input id="profile-description-input"  type="text" class="modal__input"  placeholder="Type your caption"/>
+            <input id="card-description-input"  type="text" class="modal__input"  placeholder="Type your caption">
           </label>
           <button type="submit"  class="modal__submit-btn">Save</button>
         </form>
       </div>
+    </div>
     </div>
     <script  defer src="./scripts/index.js" ></script>
   </body>
